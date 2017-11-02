@@ -109,7 +109,7 @@ Js修改样式：
 
 ![image.png](http://upload-images.jianshu.io/upload_images/2662764-8ad47d0bbb9b4c81.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-自此，就成功的将markdown转变成了比较漂亮的html文件。
+自此，就成功的将markdown转变成了比较漂亮的html文件。[样例地址](http://md.yfree.cc/page)
 这时候可以把文件上传到gitpage或者自己的服务器，然后得到链接就能发给其他人看了，但是一般大家也不会用html文件来作为互相发送的文档（虽然我个人觉得这样用起来也可以），所以继续下一步：将html转换为pdf。
 
 #### 第四步：将html转换为pdf
