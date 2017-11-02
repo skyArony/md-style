@@ -1,0 +1,28 @@
+<link href="../static/assets/template-theme-white.css" rel="stylesheet" media="screen">
+<link href="../static/assets/myCss.css" rel="stylesheet" media="screen">
+<script src="https://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+<script>
+  $(document).ready(function () {
+    // 修改样式
+    $("#wmd-preview").addClass("wmd-preview-full-reader");
+    $("body").css("background-color", "#fcfaf2");
+    $(".white-blockquote").css("background", "whitesmoke");
+    $("body").css("background-color", "#fcfaf2");
+    $("h1,h2,h3,h4,h5,h6").css("font-weight", "700");
+    $("pre.prettyprint").css("background-color", "whitesmoke");
+    $(".theme-white").css("background-color", "#e5e5e5");
+    $(".theme-white.sequence-diagram [fill='#ffffff'], .theme-white.flow-diagram [fill='#ffffff']").css("fill", "#e5e5e5");
+    $("img").parent().addClass("image-package")
+    $("img").each(function () {
+      var that = $(this);
+      var alt = that.attr("alt");
+      var add = '<br><div class="image-caption">'+ alt +'</div>';
+      var html = that.parent().html() + add;
+      that.parent().html(html);
+    })
+  });
+</script>
+
+
+wkhtmltopdf path Templates/md2pdf/pdf/
+
